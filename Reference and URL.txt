@@ -1,3 +1,12 @@
 
 URL: https://www.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21463694?start=15#overview
 Project location at office pc: E:\Project\Tutorial2023\VueJS\Vue.js_3_B_Udemy
+
+
+Important: Changed Vue Script Import Path
+In the next lecture, we'll use the following import path to load the Vue framework into our application:
+<script src="https://unpkg.com/vue@next"></script>
+
+This must be changed to the following path:
+<script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js"></script> 
+latest: <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
