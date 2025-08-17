@@ -1,0 +1,3 @@
+
+URL: https://www.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21463694?start=15#overview
+Project location at office pc: E:\Project\Tutorial2023\VueJS\Vue.js_3_B_Udemy
