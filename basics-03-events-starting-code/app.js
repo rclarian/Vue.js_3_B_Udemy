@@ -6,10 +6,10 @@ const app = Vue.createApp({
   },
   methods: {
     counterIncrement(){
-      return counter++;
+      this.counter++;
     },
     counterDecrement(){
-      return counter--;
+      this.counter--;
     },
   }
 });
