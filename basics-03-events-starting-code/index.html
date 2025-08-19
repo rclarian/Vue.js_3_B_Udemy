@@ -21,6 +21,8 @@
       <button @click="counterIncrement(5)">Add 5</button>
       <button @click="counterDecrement(5)">Subtract 5</button>
       <p>Result: {{ counter }}</p>
+      <input type="text" @input="setName($event, 'clarian')" >
+      <p>Your Name: {{ name }}</p>
     </section>
   </body>
 </html>
