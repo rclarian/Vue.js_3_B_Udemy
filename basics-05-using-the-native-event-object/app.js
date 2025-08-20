@@ -6,10 +6,17 @@ const app = Vue.createApp({
     };
   },
   methods: {
+    outFullName(){
+      console.log('Running again....')
+      if(this.name === ''){
+        return '';
+      }
+      return this.name + ' ' + 'Clarian';
+    },
     resetInput() {
       this.name = '';
     },
-    setName(event, lastName) {
+    setName(event) {
       this.name = event.target.value;
     },
     add(num) {
