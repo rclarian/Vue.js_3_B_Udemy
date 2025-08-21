@@ -7,8 +7,12 @@ const app = Vue.createApp({
   },
   methods: {
     addGoal() {
-      this.goals.push(this.enteredGoalValue);
-      this.enteredGoalValue = '';
+      if (this.enteredGoalValue === "") {
+        alert('Enter a value');
+      } else {
+        this.goals.push(this.enteredGoalValue);
+        this.enteredGoalValue = "";
+      }
     },
   },
 });
