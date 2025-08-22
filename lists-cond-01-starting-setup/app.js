@@ -19,6 +19,9 @@ const app = Vue.createApp({
         this.enteredGoalValue = "";
       }
     },
+    removeGoal(idx){
+      this.goals.splice(idx, 1);
+    },
   },
   mounted() {
     window.addEventListener("keyup", this.handleEnter);
