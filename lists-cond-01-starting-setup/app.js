@@ -6,14 +6,25 @@ const app = Vue.createApp({
     };
   },
   methods: {
+    handleEnter(e) {
+      if (e.key === "Enter") {
+        this.addGoal();
+      }
+    },
     addGoal() {
       if (this.enteredGoalValue === "") {
-        alert('Enter a value');
+        alert("Enter a value");
       } else {
         this.goals.push(this.enteredGoalValue);
         this.enteredGoalValue = "";
       }
     },
+  },
+  mounted() {
+    window.addEventListener("keyup", this.handleEnter);
+  },
+  beforeUnmount() {
+    window.removeEventListener("keyup", this.handleEnter);
   },
 });
 

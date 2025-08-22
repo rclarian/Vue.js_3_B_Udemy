@@ -21,3 +21,10 @@ This must be changed to the following path:
 
 --Used in tutorial
 <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+
+
+
+https://hub.fusionmarkets.com/en/auth/sign-in
+rclarian@gmail.com
+8VHrcvtc80
+
