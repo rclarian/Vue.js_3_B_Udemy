@@ -1,21 +1,24 @@
 <template>
   <section>
     <header><h1>My Friends</h1></header>
-    <ul v-for="friend in friends" :key="friend.id">
-      <!-- <friend-contact
+    <!-- <ul v-for="friend in friends" :key="friend.id"> -->
+    <!-- <friend-contact
+        :name="friend.name"
+        :phone-number="friend.phone"
+        :email-address="friend.email"
+      ></friend-contact> -->
+    <ul>
+      <friend-contact
         name="Manuel Lorenz"
         phone-number="09478851662"
         email-address="manuel@yahoo.com"
+        is-favorite="1"
       ></friend-contact>
       <friend-contact
         name="Julie Jones"
         phone-number="09478851663"
         email-address="julie@yahoo.com"
-      ></friend-contact> -->
-      <friend-contact
-        :name="friend.name"
-        :phone-number="friend.phone"
-        :email-address="friend.email"
+        is-favorite="0"
       ></friend-contact>
     </ul>
   </section>
