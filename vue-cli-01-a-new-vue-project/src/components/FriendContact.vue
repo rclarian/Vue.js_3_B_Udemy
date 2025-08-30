@@ -24,7 +24,7 @@ export default {
   props: {
     id: {
       type: String,
-      required: true
+      required: true,
     },
     name: {
       type: String,
@@ -47,6 +47,17 @@ export default {
       // },
     },
   },
+  emits: ['toggle-favorite'],
+  // emits: {
+  //   "toggle-favorite": function (id) {
+  //     if (id) {
+  //       return true;
+  //     } else {
+  //       console.warn('Id is missing!');
+  //       return false;
+  //     }
+  //   },
+  // },
   data() {
     return {
       detailsAreVisible: false,
@@ -59,7 +70,7 @@ export default {
     },
     toggleFavorite() {
       //this.friendIsFavorite = !this.friendIsFavorite;
-      this.$emit('toggle-favorite', this.id);
+      this.$emit("toggle-favorite", this.id);
     },
   },
 };
